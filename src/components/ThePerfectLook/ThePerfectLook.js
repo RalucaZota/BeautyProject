@@ -24,7 +24,6 @@ export default function ThePerfectLook() {
       </div>
       <div className="perfectlook-div3">
         <button className="perfectlook-button">CONTACT US</button>
-        <h1>bla bla</h1>
       </div>
     </section>
   );
