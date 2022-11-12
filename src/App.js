@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Section1 from "./components/Section1/Section1";
+import Section2 from "./components/Section2/Section2";
+import Section3 from "./components/Section3/Section3";
+import ThePerfectLook from "./components/ThePerfectLook/ThePerfectLook";
+import MusicEducation from "./components/MusicEducation/MusicEducation";
+import SkinRevolution from "../src/components/SkinRevolutionary/SkinRevolutionary";
+import SmileGirl from "../src/components/SmileGirl/SmileGirl";
+import Form from "./components/Form/Form";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <ThePerfectLook />
+      <MusicEducation />
+      <SkinRevolution />
+      <SmileGirl />
+      <Form />
+      <Footer />
     </div>
   );
 }

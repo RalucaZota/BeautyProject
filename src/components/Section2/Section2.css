@@ -1,0 +1,22 @@
+@media only screen and (min-width: 0px) {
+  .section2 {
+    background-color: #2d4969;
+    padding-top: -10px;
+    padding-bottom: 10px;
+  }
+  .section2-div {
+    width: 290px;
+
+    margin: 0 auto;
+  }
+  .section2-h4 {
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  .section2-p {
+    color: white;
+    font-size: 18px;
+    margin-top: -30px;
+  }
+}

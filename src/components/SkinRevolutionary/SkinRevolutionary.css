@@ -1,0 +1,49 @@
+@media only screen and (min-width: 0px) {
+  .skin-revolution {
+    background-color: #2d4969;
+  }
+  .skin-revolution-div1 {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .skin-revolution-h6 {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+  }
+
+  .skin-revolution-h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+  }
+  .skin-revolution-h5 {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+  }
+  .skin-revolution-button {
+    border-radius: 50px;
+    color: #2d4969;
+    background-color: white;
+    border: none;
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .skin-revolution-h5a {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 25px 0;
+    color: white;
+  }
+  .skin-revolutionary-p {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .skin-revolutionary-p:last-child {
+    padding-bottom: 40px;
+  }
+}

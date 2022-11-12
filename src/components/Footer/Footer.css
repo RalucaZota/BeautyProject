@@ -1,0 +1,18 @@
+@media only screen and (min-width: 0px) {
+  .footer-div {
+    background-color: #2e2c28;
+  }
+  footer {
+    width: 290px;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: 145px;
+    /* margin-top: 50px; */
+    padding-left: 20px;
+  }
+  .footer-p {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+  }
+}

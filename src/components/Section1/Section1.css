@@ -1,0 +1,53 @@
+/* @import url("https://fonts.cdnfonts.com/css/montserrat"); */
+
+@media only screen and (min-width: 0) {
+  .section1 {
+    background-image: url("../../assets/Section1Img/images/fundal.png");
+    /* background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .section1-img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid sandybrown;
+    border-radius: 150px;
+  }
+
+  .main-div {
+    text-align: center;
+  }
+  .section1-h1 {
+    font-size: 38px;
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #2d4969;
+  }
+  .section1-p {
+    margin-top: -22px;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Open Sans Light", sans-serif;
+    /* font-family: "Open Sans Condensed", sans-serif; */
+    font-size: 18px;
+    font-weight: 400 regular;
+    font-style: italic;
+    line-height: 200%;
+  }
+  button {
+    width: 190px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #2d4969;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  button:hover {
+    background-color: #f0bf75;
+  }
+}
