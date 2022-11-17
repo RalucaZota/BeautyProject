@@ -1,0 +1,111 @@
+@media only screen and (min-width: 0px) {
+  .navBar {
+    position: relative;
+  }
+
+  .navBar button {
+    position: fixed;
+    right: 20px;
+    top: 6px;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .menuNav {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 25vh;
+    max-width: 180px;
+    z-index: 9;
+    border-radius: 30px;
+    width: 0px;
+  }
+
+  .menuNav.showMenu {
+    width: 100%;
+    background-color: wheat;
+  }
+
+  a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #2d4969;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .menuNav li:first-child {
+    margin-top: 2.5rem;
+  }
+  .navBar button {
+    background: transparent;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .menuNav {
+    width: 100%;
+    max-width: 100%;
+    height: 10vh;
+    position: relative;
+  }
+  .navBar button {
+    display: none;
+  }
+  .Navbar {
+    border-bottom-style: double;
+    border-width: 6px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 45px;
+    padding: 0 16px;
+    height: 80px;
+    font-size: 25px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .elements ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    text-decoration: none;
+    height: 100%;
+    padding-bottom: 10px;
+  }
+
+  #general {
+    color: #2d4969;
+  }
+
+  nav li:hover {
+    background-color: bisque;
+    border-radius: 50px;
+    transform: scale(1.08);
+    border-color: #2d4969;
+    border-width: 2px;
+    border-style: groove;
+  }
+  .menuNav li:first-child {
+    margin-top: 0rem;
+  }
+}

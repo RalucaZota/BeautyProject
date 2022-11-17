@@ -2,20 +2,21 @@
 
 @media only screen and (min-width: 0) {
   .section1 {
-    background-image: url("../../assets/Section1Img/images/fundal.png");
-    /* background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat; */
+    background-image: url("../../../assets/Section1Img/images/fundal.png");
     background-position: 50% 50%;
     background-size: cover;
+    background-position-y: 500px;
+    padding-bottom: 20px;
+    margin-top: -3px;
   }
   .section1-img {
     width: 250px;
     height: 250px;
     display: block;
     margin: 0 auto;
-    border: 5px solid sandybrown;
+    border: 9px solid sandybrown;
     border-radius: 150px;
+    margin-top: 5px;
   }
 
   .main-div {
@@ -37,7 +38,7 @@
     font-style: italic;
     line-height: 200%;
   }
-  button {
+  .button-section1 {
     width: 190px;
     height: 45px;
     border-radius: 50px;
@@ -47,7 +48,10 @@
     font-size: 16px;
     font-weight: bold;
   }
-  button:hover {
+  .button-section1:hover {
     background-color: #f0bf75;
+  }
+  #section1-button {
+    color: white;
   }
 }

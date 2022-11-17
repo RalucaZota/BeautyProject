@@ -1,8 +1,9 @@
 @media only screen and (min-width: 0px) {
   .Form {
+    padding-bottom: 5px;
     background-color: #2d4969;
-    margin-top: 60px;
-    padding-bottom: 1px;
+    margin-top: -60px;
+    height: 84vh;
   }
   .h2-form {
     font-weight: bold;
@@ -17,68 +18,99 @@
   label {
     display: block;
   }
-  .Name-form label {
-    margin-bottom: 8px;
+  .form-control label {
+    margin-bottom: 5px;
     font-size: 18px;
     margin-left: 10px;
   }
-  .Name-form input,
-  .Name-form select {
+  .form-control input,
+  .form-control select {
     padding: 8px;
     border-radius: 20px;
     border: 1px solid #ccc;
     height: 48px;
-    width: 270px;
+    width: 250px;
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     background-color: #e7e8e3;
   }
 
-  .Phone-form label {
-    margin-bottom: 8px;
-    font-size: 18px;
-    margin-left: 10px;
-  }
-
-  .Phone-form input,
-  .Phone-form select {
-    padding: 8px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    height: 48px;
-    width: 270px;
-    height: 30px;
-    margin-bottom: 10px;
-    background-color: #e7e8e3;
-  }
-
-  .Message-form label {
-    margin-bottom: 8px;
-    font-size: 18px;
-    margin-left: 10px;
-  }
-  .Message-form input,
-  .Message-form select {
-    padding: 8px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    background-color: #e7e8e3;
-    width: 270px;
-    height: 110px;
-    margin-bottom: 10px;
+  .Message-form input {
+    margin-bottom: 30px;
   }
 
   form {
-    width: 290px;
+    width: 270px;
     margin: 0 auto;
     padding-top: 40px;
     background-color: white;
     margin-bottom: 60px;
     border-radius: 20px;
     padding: 40px 30px;
-    height: 390px;
+  }
+  .button-form {
+    width: 270px;
+    background-color: #2d4969;
+    color: white;
+    border-radius: 30px;
+    height: 55px;
+  }
+  .invalid input {
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+  }
+  .error-text {
+    color: #b40e0e;
+    margin-top: -5px;
+    margin-left: 5px;
+  }
+  .mesaj-form {
+    text-align: center;
+    font-size: 15px;
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bolder;
+    border-radius: 22px;
+    border-color: #2d4969;
+    border-width: 2px;
+    border-style: dashed;
+    padding: 3px 3px;
+
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .h2-form {
+    padding-bottom: 50px;
+  }
+  form {
+    width: 290px;
+    height: 420px;
+  }
+  .form-control input,
+  .form-control select {
+    padding: 8px;
+
+    height: 40px;
+    width: 275px;
   }
   .button-form {
     width: 290px;
+    margin-top: 25px;
+  }
+  .form-control label {
+    margin-bottom: 2px;
+  }
+  .form-control input,
+  .form-control select {
+    margin-bottom: 20px;
+  }
+  .error-text {
+    border: 1px solid red;
+    margin-bottom: -5px;
+    margin-top: -10px;
+  }
+  .mesaj-form {
+    margin-top: 10px;
   }
 }

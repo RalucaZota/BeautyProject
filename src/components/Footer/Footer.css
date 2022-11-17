@@ -5,14 +5,14 @@
   footer {
     width: 290px;
     margin: 0 auto;
-    padding-top: 10px;
-    height: 145px;
+    padding-top: 5px;
+    height: 70px;
     /* margin-top: 50px; */
     padding-left: 20px;
   }
   .footer-p {
     color: white;
     text-align: center;
-    padding-top: 30px;
+    align-items: center;
   }
 }

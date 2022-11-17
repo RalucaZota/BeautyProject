@@ -31,6 +31,7 @@
     width: 170px;
     height: 50px;
     font-size: 14px;
+    font-weight: bolder;
   }
   .skin-revolution-h5a {
     font-weight: bold;
@@ -45,5 +46,30 @@
   }
   .skin-revolutionary-p:last-child {
     padding-bottom: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .skin-revolution-div1 {
+    width: 90%;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .skin-revolution-h2 {
+    font-size: 48px;
+    margin-bottom: -20px;
+    width: 100px;
+  }
+  .skin-revolution-div2 {
+    margin-top: -40px;
+    margin-left: 500px;
+  }
+  .skin-revolution-h5 {
+    width: 500px;
+  }
+
+  .skin-revolution-div3 {
+    margin-left: -35px;
+    width: 400px;
   }
 }

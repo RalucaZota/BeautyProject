@@ -12,7 +12,14 @@ export default function SkinRevolutionary() {
             We help local nonprofits access the funding, tools, training, and
             support they need to become more effective.
           </h5>
-          <button className="skin-revolution-button">LEARN MORE</button>
+          <div>
+            <a
+              target="_blank"
+              href="https://mad-skincare.eu/?gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEEMMPVsEVanRLqKskb6l0hka9-pfHiN_vXLXHBPA6yXd0zHGDuvmZAaAnXHEALw_wcB"
+            >
+              <button className="skin-revolution-button">LEARN MORE</button>
+            </a>
+          </div>
         </div>
 
         <div className="skin-revolution-div3">

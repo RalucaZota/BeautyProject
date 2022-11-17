@@ -1,0 +1,73 @@
+@media only screen and (min-width: 0px) {
+  .section2 {
+    background-color: #2d4969;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .section2-div {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .section2-div1 {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .section2-h4 {
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  .section2-h4-a {
+    color: white;
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  .section2-p {
+    color: white;
+    font-size: 18px;
+    margin-top: -30px;
+  }
+  .section2-p1 {
+    color: white;
+    font-size: 18px;
+    margin-top: -30px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section2-div {
+    width: 80%;
+    margin-right: 105px;
+  }
+  .section2-general {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section2-lastdiv {
+    margin-right: 455px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .section2-div-principal {
+    display: flex;
+    margin: 30px 20px;
+  }
+  .section2-general {
+    flex-wrap: nowrap;
+  }
+  .section2-h4 {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 38px;
+    margin-left: 50px;
+  }
+
+  .section2-p {
+    margin-right: 80px;
+  }
+  .section2-div {
+    margin-left: 350px;
+  }
+  .section2-p1 {
+    margin-left: 50px;
+  }
+}

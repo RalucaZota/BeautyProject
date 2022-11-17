@@ -1,0 +1,83 @@
+@media only screen and (min-width: 0px) {
+  .section3 {
+    background-image: url("../../../assets//Section3-img//block-fce2/images/Fundal.jpg");
+    position: relative;
+    padding: 40px 0px;
+
+    /* background-position: 50% 50%; */
+    background-size: cover;
+    /* background-position-y: 500px; */
+  }
+  #section3-img1 {
+    width: 296px;
+    height: 220px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  #section3-h6 {
+    font-size: 18px;
+    color: #2d4969;
+    text-transform: uppercase;
+    font-weight: 380;
+  }
+
+  #section3-h2 {
+    font-size: 36px;
+    text-align: start;
+    font-weight: bold;
+    margin-top: -30px;
+  }
+
+  #section3-p {
+    font-size: 16px;
+    text-align: start;
+  }
+  .section3-div-text {
+    width: 290px;
+    margin: 0 auto;
+  }
+  .section3-button {
+    border-radius: 50px;
+
+    background-color: #2d4969;
+    border: none;
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .section3-div {
+    display: flex;
+    align-items: center;
+  }
+  #section3-img1 {
+    height: 245px;
+    padding-left: 45px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #section3-img1 {
+    height: 450px;
+    width: 450px;
+  }
+  .section3-div-img {
+    margin-left: 600px;
+  }
+  .section3-div-text {
+    margin-left: 70px;
+  }
+  .section3-h6 {
+    font-size: 18px;
+  }
+  #section3-h2 {
+    font-size: 40px;
+  }
+  #section3-p {
+    font-size: 20px;
+  }
+}

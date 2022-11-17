@@ -1,13 +1,14 @@
 import React from "react";
 import "../Section1/Section1.css";
-import blackw from "../../assets/Section1Img/images/blackw.jpg";
+import blackw from "../../../assets/Section1Img/images/blackw.jpg";
+import { Link } from "react-router-dom";
 
 export default function Section1() {
   return (
     <section className="section1">
       <div className="main-div">
         <div>
-          <img className="section1-img" src={blackw} />
+          <img className="section1-img" src={blackw} alt="blackw" />
         </div>
         <div>
           <h1 className="section1-h1">
@@ -23,7 +24,11 @@ export default function Section1() {
           </p>
         </div>
         <div>
-          <button>CONTACT US</button>
+          <button className="button-section1">
+            <Link to="/form" id="section1-button">
+              CONTACT US
+            </Link>
+          </button>
         </div>
       </div>
     </section>
