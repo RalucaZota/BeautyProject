@@ -6,6 +6,7 @@ import { FaAlignRight } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
+import sigla from "../../assets/Header/Bell.png";
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);

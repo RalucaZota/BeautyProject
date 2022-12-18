@@ -92,8 +92,8 @@
     width: 350px;
   }
 
-  /* .perfectlook-images {
-    width: 600px;
+  .perfectlook-images {
+    width: 300px;
     flex-direction: column;
-  } */
+  }
 }

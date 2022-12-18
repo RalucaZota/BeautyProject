@@ -6,3 +6,6 @@ html {
   min-height: 100%;
   position: relative;
 }
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,48 +1,58 @@
 import React, { useState } from "react";
+import useInput from "./hooks/use-Input";
 import "./Form.css";
-export default function Form() {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
+
+export default function Form(props) {
   const [submitMessage, setsubmitMessage] = useState("");
-  const [nameisTouched, setNameisTouched] = useState(false);
-  const [phoneisTouched, setphoneisTouched] = useState(false);
-  const [messageTouched, setMessageisTouched] = useState(false);
+  const isNotEmpty = (value) => value.trim() !== "";
+  const {
+    value: enteredName,
+    isValid: nameIsValid,
+    valueHasError: nameHasError,
+    valueChangeHandler: changeNameInputHandler,
+    inputBlurHandler: changeNameInputBlurHandler,
+    reset: resetName,
+  } = useInput(isNotEmpty);
 
-  const enteredNameisValid = name.trim() !== "";
-  const enteredPhoneisValid = phone.trim() !== "";
-  const enteredMessageisValid = message.trim() !== "";
+  const {
+    value: enteredPhone,
+    isValid: phoneIsValid,
+    valueHasError: phoneHasError,
+    valueChangeHandler: changephoneInputHandler,
+    inputBlurHandler: changephoneInputBlurHandler,
+    reset: resetPhone,
+  } = useInput(isNotEmpty);
 
-  const nameisInvalid = !enteredNameisValid && nameisTouched;
-  const phoneisInvalid = !enteredPhoneisValid && phoneisTouched;
-  const messageisInvalid = !enteredMessageisValid && messageTouched;
+  const {
+    value: enteredMessage,
+    isValid: messageIsValid,
+    valueHasError: messageHasError,
+    valueChangeHandler: changeMessageInputHandler,
+    inputBlurHandler: changeMessageInputBlurHandler,
+    reset: resetMessage,
+  } = useInput(isNotEmpty);
 
   let formIsValid = false;
-  if (enteredNameisValid && enteredPhoneisValid && enteredMessageisValid) {
+  if (nameIsValid && phoneIsValid && messageIsValid) {
     formIsValid = true;
   }
 
   let handleSubmit = async (e) => {
     e.preventDefault();
-    if (!enteredNameisValid && !enteredPhoneisValid && !enteredMessageisValid) {
+    if (!nameIsValid && !phoneIsValid && !messageIsValid) {
       return;
     }
-
-    console.log(name, phone, message);
-    setNameisTouched(false);
-    setphoneisTouched(false);
-    setMessageisTouched(false);
     e.target.reset();
 
     try {
       let app = await fetch(
-        "https://beautyform-14679-default-rtdb.firebaseio.com/beautybooking.json",
+        "https://beautyproject1-81357-default-rtdb.firebaseio.com/beautybooking.json",
         {
           method: "POST",
           body: JSON.stringify({
-            name: name,
-            phone: phone,
-            message: message,
+            name: enteredName,
+            phone: enteredPhone,
+            message: enteredMessage,
           }),
           headers: {
             "Content-Type": "application/json",
@@ -52,29 +62,20 @@ export default function Form() {
       let data = await app.json();
       console.log(data);
       if (app.status === 200) {
-        setName("");
-        setPhone("");
-        setMessage("");
+        resetName("");
+        resetPhone("");
+        resetMessage("");
         setsubmitMessage("The appointment was successfully completed!");
       } else {
-        setMessage("Some error occured");
+        setsubmitMessage("Some error occured");
       }
     } catch (error) {
       console.log("Some error has occured.");
     }
   };
-  const nameInputBlurHandler = (e) => {
-    setNameisTouched(true);
-  };
-  const phoneInputBlurHandler = (e) => {
-    setphoneisTouched(true);
-  };
-  const messageInputBlurHandler = (e) => {
-    setMessageisTouched(true);
-  };
 
   const InputClasses =
-    nameisInvalid && phoneisInvalid && messageisInvalid
+    nameHasError && phoneHasError && messageHasError
       ? "form-control invalid"
       : "form-control";
   return (
@@ -87,11 +88,11 @@ export default function Form() {
           <input
             type="text"
             placeholder="Enter your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            onBlur={nameInputBlurHandler}
+            value={enteredName}
+            onChange={changeNameInputHandler}
+            onBlur={changeNameInputBlurHandler}
           />
-          {nameisInvalid && (
+          {nameHasError && (
             <p className="error-text"> Name must not be empty. </p>
           )}
         </div>
@@ -100,11 +101,11 @@ export default function Form() {
           <input
             type="phone"
             placeholder="Enter your phone(e.g. +14155521...)"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            onBlur={phoneInputBlurHandler}
+            value={enteredPhone}
+            onChange={changephoneInputHandler}
+            onBlur={changephoneInputBlurHandler}
           />
-          {phoneisInvalid && (
+          {phoneHasError && (
             <p className="error-text"> Phone must be not empty. </p>
           )}
         </div>
@@ -113,11 +114,11 @@ export default function Form() {
           <input
             placeholder="Your message"
             type="text"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            onBlur={messageInputBlurHandler}
+            value={enteredMessage}
+            onChange={changeMessageInputHandler}
+            onBlur={changeMessageInputBlurHandler}
           />
-          {messageisInvalid && (
+          {messageHasError && (
             <p className="error-text"> Message must be not empty. </p>
           )}
         </div>

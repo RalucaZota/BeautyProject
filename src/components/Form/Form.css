@@ -56,7 +56,6 @@
     height: 55px;
   }
   .invalid input {
-    border: 1px solid #b40e0e;
     background-color: #fddddd;
   }
   .error-text {
@@ -74,9 +73,8 @@
     border-color: #2d4969;
     border-width: 2px;
     border-style: dashed;
-    padding: 3px 3px;
-
-    margin-top: 20px;
+    padding: 2px 2px;
+    margin-top: 6px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -106,11 +104,7 @@
     margin-bottom: 20px;
   }
   .error-text {
-    border: 1px solid red;
     margin-bottom: -5px;
     margin-top: -10px;
-  }
-  .mesaj-form {
-    margin-top: 10px;
   }
 }
