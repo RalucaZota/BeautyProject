@@ -25,7 +25,7 @@ export default function Email() {
 
     try {
       let subscribe = await fetch(
-        "https://beautyproject1-81357-default-rtdb.firebaseio.com/beautybooking.json",
+        "https://beautyproject2-61762-default-rtdb.firebaseio.com/beautybooking.json",
         {
           method: "POST",
           body: JSON.stringify({

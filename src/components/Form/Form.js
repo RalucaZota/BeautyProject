@@ -46,7 +46,7 @@ export default function Form(props) {
 
     try {
       let app = await fetch(
-        "https://beautyproject1-81357-default-rtdb.firebaseio.com/beautybooking.json",
+        "https://beautyproject2-61762-default-rtdb.firebaseio.com/beautybooking.json",
         {
           method: "POST",
           body: JSON.stringify({
